@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+</head>
+<body>
+    <h2>JavaScript Can Change HTML Content</h2>
+    <div id="demo1">Hello World!</div>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = 'Hello JavaScript!'">Change Text</button>
+    <h2>JavaScript Can Change HTML Attribute Values</h2>
+    <button type="button" onclick="document.getElementById('demo2').src = 'images/pic_bulbon.gif'">Turn on the Light</button><br>
+    <img id="demo2" src="images/pic_bulboff.gif"><br>
+    <button type="button" onclick="document.getElementById('demo2').src = 'images/pic_bulboff.gif'">Turn off the Light</button>
+    <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+    <p id="demo3">Change text color</p>
+    <button type="button" onclick="document.getElementById('demo3').style.color = '#4CAF50'">Change</button>
+    <h3>JavaScript Can Hide - Show HTML Elements</h3>
+    <button type="button" onclick="document.getElementById('demo4').style.display = 'none'">Hide</button>
+    <button type="button" onclick="document.getElementById('demo4').style.display = 'block'">Show</button>
+    <p id="demo4">Hide me!</p>
+</body>
+</html>
