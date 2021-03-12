@@ -26,6 +26,15 @@
     </script>
     <p class="note">Changing the innerHTML property of an HTML element is a common way to display data in HTML.</p>
     <h3>Using document.write()</h3>
-    
+    <button type="button" onclick="document.write('')">Clear</button>
+    <p class="caution">Using <code>document.write()</code> after an HTML document is loaded, will delete all existing HTML.<br>
+    The <code>document.write()</code> method should only be used for testing.</p>
+    <h3>Using window.alert()</h3>
+    <button type="button" onclick="alert('Alert Alert')">Alert!</button>
+    <p>You can skip the <code>window</code> keyword.<br>
+    In JavaScript, the <code>window</code> object is the global scope object, that means that variables, properties, and methods by default belong to the window object.</p>
+    <h3>Using console.log()</h3>
+    <h3>JavaScript Print</h3>
+    <p>Sử dụng <code>window.print()</code> để gọi máy in trong máy người dùng.</p>
 </body>
 </html>

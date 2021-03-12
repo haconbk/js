@@ -10,3 +10,8 @@ code {
     padding: 20px;
     background-color: #ffffcc;
 }
+.caution {
+    margin: 15px;
+    padding: 20px;
+    background-color: #FFDDDD;
+}
