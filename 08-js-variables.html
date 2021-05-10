@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Variables</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+    <p id="demo1"></p>
+    <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.getElementById("demo1").innerHTML = "Giá trị của z là: " + z;
+    </script>
+    <h2>Using <b>let</b> and <b>const</b> (ES6)</h2>
+    <p>Phiên bản 2015 của JavaScript (ES6) cho phép sử dụng const để xác định một biến không thể gán lại và let để xác định một biến có phạm vi hạn chế.</p>
+    <h2>JavaScript Identifiers</h2>
+    <p>Tất cả các biến JavaScript được xác định bằng tên duy nhất. Tên này được gọi là Identifiers - Định danh<br>
+    Quy tắt đặt tên<br>
+        <ul>
+            <li>Tên có thể chứa chữ, số, gạch dưới ( _ ) và dollar ( $ )</li>
+            <li>Tên cần bắt đầu bằng chữ</li>
+            <li>Tên cũng có thể bắt đầu bằng $ hoặc _</li>
+            <li>Tên được phân biệt hoa thường (x và X là 2 biến khác nhau)</li>
+            <li>Các từ khóa dành riêng không được dùng đặt tên (var, lets ....)</li>
+        </ul>
+    </p>
+    <h2>Toán tử gán trong JavaScript</h2>
+    <p>Trong JS, dấu <code>=</code> là toán từ gán, không phải là dấu bằng trong đại số. Dấu bằng trong đại số ở JS là <code>==</code></p>
+</body>
+</html>
