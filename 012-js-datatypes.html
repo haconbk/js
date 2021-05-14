@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript DataTypes</title>
+</head>
+<body>
+    <h1>JavaScript Data Types</h1>
+    <p>JavaScript variables can hold many data types: numbers, strings, objects and more</p>
+    <h2>The Concept of Data Types</h2>
+    <h2>JavaScript Arrays</h2>
+    <p id="demo1"></p>
+    <script>
+        var carName = ["Vinfast", "Toyota", "Honda"];
+        document.getElementById("demo1").innerHTML = carName[0] + "<br>" + carName[1] + "<br>" +carName[2];
+    </script>
+    <h2>The typeof Operator</h2>
+    <p><code>typeof</code> trả về loại của biến</p>
+    <p id="demo2"></p>
+    <script>
+        var car;
+        document.getElementById("demo2").innerHTML = typeof 1 + "<br>" + typeof "demo" + "<br>" + typeof car;
+    </script>
+</body>
+</html>
