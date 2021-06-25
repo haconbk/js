@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Object</title>
+</head>
+<body>
+    <div>Tên là: </div>
+    <div id="demo1"></div>
+    <div>Tuổi là: </div>
+    <div id="demo2"></div>
+    <div>Màu mắt: </div>
+    <div id="demo3"></div>
+    <script>
+        const person = {firstName:"John", lastName:"Smith", age:"25", eyeColor:"red"}
+        document.getElementById("demo1").innerHTML = person.firstName + " " + person.lastName;
+        document.getElementById("demo2").innerHTML = person["age"]; // cách truy cập khác, dùng []
+        document.getElementById("demo3").innerHTML = person.eyeColor;
+    </script>
+    <div class="note">Các đối tượng JavaScript là vùng chứa cho <b>các giá trị được đặt tên</b> được gọi là thuộc tính.</div>
+</body>
+</html>
