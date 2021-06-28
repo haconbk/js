@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript String</title>
+</head>
+<body>
+    <h2>JavaScript String</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h3>backslash escape character</h3>
+    <p id="demo4"></p>
+    <script>
+        let str1 = "Manh Ha";
+        let str2 = 'Manh Ha 1'; //single quotes
+        document.getElementById("demo1").innerHTML = str1;
+        document.getElementById("demo2").innerHTML = str2;
+        document.getElementById("demo3").innerHTML = str2.length;
+        let str4 = "Chuỗi này chèn dấu \"ngoặc kép\" bằng cách sử dụng \\. Nhìn source code sẽ hiểu";
+        document.getElementById("demo4").innerHTML = str4;
+    </script>
+</body>
+</html>

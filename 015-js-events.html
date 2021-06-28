@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table, tr {
+            border: solid 1px #cccccc;
+            border-collapse: collapse;
+        }
+        th, td {
+            display: table-cell;
+            margin: 8px;
+            padding: 8px;
+        }
+        .trbg {
+            background-color: #f1f1f1;
+        }
+    </style>
     <title>JavaScript Events</title>
 </head>
 <body>
-    
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Bây giờ là ...</button>
+    <div id="demo"></div>
+    <button onclick="this.innerHTML = Date()">Bây giờ là ...</button>
+    <div class="note">Code JavaScript dài nên thường tách ra bằng cách gọi hàm</div>
+    <h2>Các sự kiện HTML phổ biến</h2>
+    <table>
+        <tr>
+            <th>Sự kiện</th>
+            <th>Định nghĩa</th>
+        </tr>
+        <tr class="trbg">
+            <td>onchange</td>
+            <td>Một phần tử HTML đã được thay đổi</td>
+        </tr>
+        <tr>
+            <td>onclick</td>
+            <td>Người dùng nhấp vào một phần tử HTML</td>
+        </tr>
+        <tr class="trbg">
+            <td>onmouseover</td>
+            <td>Người dùng di chuyển chuột qua một phần tử HTML</td>
+        </tr>
+        <tr>
+            <td>onmouseout</td>
+            <td>Người dùng di chuyển chuột khỏi phần tử HTML</td>
+        </tr>
+        <tr class="trbg">
+            <td>onkeydown</td>
+            <td>Người dùng nhấn một phím bàn phím</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>Trình duyệt đã tải xong trang</td>
+        </tr>
+    </table>
+    <p>Tham khảo thêm <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">W3Schools JavaScript Reference HTML DOM Events.</a></p>
 </body>
 </html>

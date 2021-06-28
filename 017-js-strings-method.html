@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Strings Method</title>
+</head>
+<body>
+    <h2>JavaScript Strings Method</h2>
+    <div>Các giá trị nguyên thủy, như "John Doe", không thể có thuộc tính hoặc phương thức (vì chúng không phải là đối tượng).<br>
+    Nhưng với JavaScript, các phương thức và thuộc tính cũng có sẵn cho các giá trị nguyên thủy, vì JavaScript xử lý các giá trị nguyên thủy như các đối tượng khi thực thi các phương thức và thuộc tính.</div>
+    <p>Chuỗi ban đầu: ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <h3>Strings Length</h3>
+    <p>Chiều dài chuỗi</p>
+    <p id="demo1"></p>
+    <h3>Extracting String Parts</h3>
+    <p>Có 3 phương pháp để trích xuất phần của chuỗi</p>
+    <ul>
+        <li><code>slice(start, end)</code></li>
+        <li><code>substring(start, end)</code></li>
+        <li><code>substr(start, length)</code></li>
+    </ul>
+        <h4>1. The slice() Method</h4>
+        <div>Trả về là 1 chuỗi được xác nhận bởi vị trí phần đầu và phần cuối của chuỗi ban đầu.</div>
+        <div id="demo2"></div>
+        <div class="note"><b>Chú ý:</b> Chuỗi được bắt đầu từ vị trí 0</div>
+        <div>Nếu tham số là âm, sẽ được bắt đầu từ cuối chuỗi</div>
+        <div>Nếu tham số <code>end</code> không có, nó sẽ loại bỏ phần còn lại của chuỗi. Như ví dụ sau:</div>
+        <div id="demo3"></div>
+        <h4>The substring() Method</h4>
+        <div>Giống với <code>slice()</code> nhưng không chấp nhận tham số âm.</div>
+        <h4>The substr() Method</h4>
+        <div>Giống với <code>slice()</code> nhưng tham số thứ 2 là chiều dài chuỗi tính từ vị trí bắt đầu. Đó cũng chính là chiều dài chuỗi mới</div>
+        <div id="demo4"></div>
+    <h3>Replacing String Content - Thay thế nội dung chuỗi</h3>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <button onclick="functionStrReplace()">Try now!</button>
+    <p id="demo5">Please visit Microsoft and Microsoft!</p>
+    <div class="note">
+        Chú ý:
+        <ul>
+            <li><code>replace()</code> chỉ tác dụng với phần chuỗi phù hợp đầu tiên</li>
+            <li><code>replace()</code> phân biệt hoa-thường</li>
+        </ul>
+    </div>
+    <script>
+        let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo1").innerHTML = str1.length;
+        document.getElementById("demo2").innerHTML = str1.slice(0,5);
+        document.getElementById("demo3").innerHTML = str1.slice(5);
+        document.getElementById("demo4").innerHTML = "Chuỗi " + str1.substr(2,10) + " có chiều dài là " + str1.substr(2,10).length;
+        function functionStrReplace() {
+            let str2 = document.getElementById("demo5").innerHTML;
+            document.getElementById("demo5").innerHTML = str2.replace("Microsoft", "W3Schools");
+        }
+    </script>
+</body>
+</html>
