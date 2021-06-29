@@ -43,8 +43,20 @@
         <ul>
             <li><code>replace()</code> chỉ tác dụng với phần chuỗi phù hợp đầu tiên</li>
             <li><code>replace()</code> phân biệt hoa-thường</li>
+            <li>Để thay thế tất cả các kết quả phù hợp, sử dụng <b>regular expression</b> với <code>/g</code></li>
+            <li>Regular Expression viết không có dấu ngoặc kép: <code>replace(/Microsoft/g, "W3Schools")</code></li>
         </ul>
     </div>
+    <h3>Chuyển đổi chữ hoa-thường</h3>
+    <div>Sử dụng hàm <code>toUpperCase</code> và <code>toLowerCase</code></div>
+    <h3>The concat() Method</h3>
+    <div>Dùng để nối 2 hoặc nhiều chuỗi.</div>
+    <h3>String.trim()</h3>
+    <div>Cắt toàn bộ khoảng trắng ở 2 đầu chuỗi.</div>
+    <h3>JavaScript String Padding</h3>
+    <div>ECMAScript 2017 đã thêm hai phương thức Chuỗi: <code>padStart</code> và <code>padEnd</code> để hỗ trợ thêm chuỗi ở đầu và cuối chuỗi.</div>
+    <h3>Converting a String to an Array</h3>
+    <div>Sử dụng hàm <code>split()</code></div>
     <script>
         let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         document.getElementById("demo1").innerHTML = str1.length;
@@ -56,5 +68,15 @@
             document.getElementById("demo5").innerHTML = str2.replace("Microsoft", "W3Schools");
         }
     </script>
+    <h2>JavaScript methods for searching strings:</h2>
+    <ul>
+        <li><code>String.indexOf()</code></li>
+        <li><code>String.lastindexOf()</code></li>
+        <li><code>String.search()</code></li>
+        <li><code>String.match()</code></li>
+        <li><code>String.includes()</code></li>
+        <li><code>String.startsWith()</code></li>
+        <li><code>String.endsWith()</code></li>
+    </ul>
 </body>
 </html>
